@@ -9,7 +9,7 @@ namespace QueueWithRetry
         private readonly ConcurrentQueue<object> _documentsQueue;
 
         private readonly AsyncRetryPolicy _retryPolicy;
-        const int RETRY_ATTEMPTS = 1;
+        const int RETRY_ATTEMPTS = 3;
 
 
         public QueueWithRetryProcessor()
